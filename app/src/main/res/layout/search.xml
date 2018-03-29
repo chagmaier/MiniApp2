@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity"
+    >
+
+    <ImageView
+        android:src="@color/lightBlue"
+        android:id="@+id/im1"
+        android:scaleType="fitXY"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"/>
+
+    <Spinner
+        android:id="@+id/dietDropdown"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="150dp"
+        android:entries="@array/diet_restriction_array"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:background="@color/lightGrey"
+        />
+
+    <Spinner
+        android:id="@+id/servingDropdown"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dietDropdown"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="50dp"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:background="@color/lightGrey"
+        />
+
+    <Spinner
+        android:id="@+id/prepTimeDropdown"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/servingDropdown"
+        android:layout_marginBottom="50dp"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:background="@color/lightGrey"
+        />
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Search"
+        android:layout_below="@+id/prepTimeDropdown"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+         />
+
+    <TextView
+        android:id="@+id/dietTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/dietDropdown"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:text="Diet Restriction"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/servingTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:layout_alignTop="@+id/servingDropdown"
+        android:text="Serving Restriction"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/prepTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:layout_alignTop="@+id/prepTimeDropdown"
+        android:text="Preparation Time"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        />
+
+    <ImageView
+        android:id="@+id/cookie"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_above="@+id/dietTextView"
+        android:layout_alignStart="@+id/dietTextView"
+        android:layout_marginBottom="44dp"
+        app:srcCompat="@drawable/cookie" />
+
+    <ImageView
+        android:id="@+id/burger"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignEnd="@+id/searchButton"
+        android:layout_alignTop="@+id/cookie"
+        app:srcCompat="@drawable/burger" />
+
+    <ImageView
+        android:id="@+id/sushi"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignBottom="@+id/burger"
+        android:layout_alignEnd="@+id/dietDropdown"
+        android:layout_marginEnd="20dp"
+        app:srcCompat="@drawable/sushi" />
+
+</RelativeLayout>

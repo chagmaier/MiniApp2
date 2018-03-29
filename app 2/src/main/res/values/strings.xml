@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">MiniApp2</string>
+
+    <string-array name="diet_restriction_array">
+        <item>Select One</item>
+        <item>Low-Sodium</item>
+        <item>Low-Carb</item>
+        <item>Medium-Carb</item>
+        <item>High-Carb</item>
+        <item>Low-Fat</item>
+        <item>Vegetarian</item>
+        <item>Balanced</item>
+
+    </string-array>
+
+    <string-array name="serving_size_array">
+        <item>Select One</item>
+        <item>Less Than 4</item>
+        <item>4-6</item>
+        <item>7-9</item>
+        <item>10 or More</item>
+    </string-array>
+
+    <string-array name="preparation_time_array">
+        <item>Select One</item>
+        <item>30 Minutes or Less</item>
+        <item>less than 1 hour</item>
+        <item>more than 1 hour</item>
+    </string-array>
+
+</resources>
